@@ -1,0 +1,16 @@
+{
+  "name": "company-websites-monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Dual landing pages monorepo featuring corporate luxury and creative tech showcases",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:w1": "npm --prefix apps/website-1 run dev",
+    "dev:w2": "npm --prefix apps/website-2 run dev",
+    "build:w1": "npm --prefix apps/website-1 run build",
+    "build:w2": "npm --prefix apps/website-2 run build",
+    "build": "npm run build:w1 && npm run build:w2"
+  }
+}
